@@ -1,0 +1,17 @@
+.cont {
+  text-align: left;
+  gap: 1em;
+}
+
+.iner-conts {
+  background-color: rgb(200, 200, 200);
+  margin-right: 10em;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.par {
+  font-size: 1.3rem;
+}
