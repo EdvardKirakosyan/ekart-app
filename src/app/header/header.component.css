@@ -1,6 +1,8 @@
 .cont {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
   text-align: left;
-  gap: 1em;
 }
 
 .iner-conts {
