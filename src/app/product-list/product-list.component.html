@@ -1,0 +1,9 @@
+<p>name: {{ product.name }}</p>
+<p>price: {{ product.price }}</p>
+<p>color: {{ product.color }}</p>
+<p>discount: {{ getDiscount().toFixed(2) }}</p>
+<p>
+  {{
+  product.inStock > 0 ? 'Only ' + product.inStock + " items left" : 'not In tock'
+  }}
+</p>
