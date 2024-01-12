@@ -1,12 +1,16 @@
-<img width="150px" [src]="product.pImage">
-<p>name: {{ product.name }}</p>
-<p>price: {{ product.price }}</p>
-<p>color: {{ product.color }}</p>
-<p>discount: {{ getDiscount().toFixed(2) }}</p>
-<p>
-  {{
-  product.inStock > 0 ? 'Only ' + product.inStock + " items left" : 'not In tock'
-  }}
-</p>
-<button [disabled]="!(product.inStock > 0)">Buy now</button>
-<input [value]='name' [attr.aria-hidden]=''>
+<div class='ekart--product--container'>
+  <img width="150px" [src]="product.pImage">
+  <p>name: {{ product.name }}</p>
+  <p>price: {{ product.price }}</p>
+  <p>color: {{ product.color }}</p>
+  <p>discount: {{ getDiscount().toFixed(2) }}</p>
+  <p>
+    {{product.inStock > 0 ? 'Only ' + product.inStock + " items left" : 'not In tock'}}
+  </p>
+  <button (click)="decrementCart()">-</button>
+  <span>{{ addToCart }}</span>
+  <button (click)="incrementCart()">+</button>
+  <!-- <input (input)='onNameChange($event)' [attr.aria-hidden]=''>
+  <br>
+  <p>{{ name }}</p> -->
+</div>
