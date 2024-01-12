@@ -62,7 +62,8 @@
 }
 
 .ekart--product--category,
-.ekart--product--available-colors {
+.ekart--product--available-colors,
+.ekart--product--in--stock {
   font-size: 12px;
   color: #999;
   margin-top: 7px;
