@@ -1,5 +1,6 @@
 {
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "html.completion.attributeDefaultValue": "singlequotes"
+  "html.completion.attributeDefaultValue": "singlequotes",
+  "prettier.singleQuote": true
 }
