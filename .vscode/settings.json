@@ -1,8 +1,8 @@
 {
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
-  "html.completion.attributeDefaultValue": "singlequotes",
+  "javascript.preferences.quoteStyle": "double",
+  "typescript.preferences.quoteStyle": "double",
+  "html.completion.attributeDefaultValue": "doublequotes",
   "prettier.singleQuote": true,
-  "html.autoCreateQuotes": false,
+  "html.autoCreateQuotes": true,
   "prettier.arrowParens": "avoid"
 }
