@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProductComponent } from './product/product.component';
 import { FilterComponent } from './filter/filter.component';
 
@@ -609,6 +609,9 @@ export class ProductListComponent {
     .filter(p => p.is_in_inventory === true).length
   totalProductOutOfStock = this.products
     .filter(p => p.is_in_inventory === false).length
+
+  @Input()
+  searchText: string = ""
 
   selectedFilter: string = 'all'
 

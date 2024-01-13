@@ -13,7 +13,7 @@
   <!-- <input (input)='onNameChange($event)' [attr.aria-hidden]=''>
   <br>
   <p>{{ name }}</p> -->
-  <app-search></app-search>
+  <app-search (searchTextChange)="setSearchText($event)"></app-search>
   <!-- <div *ngFor='let item of qlistOfString'>
     <p>Current el is: {{ item }}</p>
   </div> -->
