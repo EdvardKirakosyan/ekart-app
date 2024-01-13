@@ -2,11 +2,11 @@
   <span>Filter: </span>
 
   <input type="radio" name="filter" value="All" />
-  <span>All</span>
+  <span>{{ "All(" + all + ")" }}</span>
 
   <input type="radio" name="filter" value="In Stock" />
-  <span>Free Courses</span>
+  <span>{{ "In Stock(" + inStock + ")"}}</span>
 
   <input type="radio" name="filter" value="Out of Stock" />
-  <span>Premium Courses</span>
+  <span>{{ "OUT OF Stock(" + outOfstock + ")"}}</span>
 </div>
