@@ -4,5 +4,6 @@
   "html.completion.attributeDefaultValue": "doublequotes",
   "prettier.singleQuote": true,
   "html.autoCreateQuotes": true,
-  "prettier.arrowParens": "avoid"
+  "prettier.arrowParens": "avoid",
+  "javascript.format.semicolons": "ignore"
 }
