@@ -604,8 +604,16 @@ export class ProductListComponent {
     },
   ];
 
-  totalProductCount = this.products.length;
+  totalProductCount = this.products.length
   totalProductInStock = this.products
-    .filter((p) => p.is_in_inventory === true).length;
-  totalProductOutOfStock = this.products.length;
+    .filter(p => p.is_in_inventory === true).length
+  totalProductOutOfStock = this.products
+    .filter(p => p.is_in_inventory === false).length
+
+  selectedFilter: string = 'all'
+
+  onFilterChange(value: string) {
+    this.selectedFilter = value
+    console.log(value)
+  }
 }
