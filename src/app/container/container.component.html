@@ -17,6 +17,9 @@
   <!-- <div *ngFor='let item of qlistOfString'>
     <p>Current el is: {{ item }}</p>
   </div> -->
-  <product-list [searchText]="searchText" #productListCompanent></product-list>
-  <product-detail *ngIf="productListCompanent.selectedProduct"></product-detail>
+  <product-list [searchText]="searchText" #productListComponent></product-list>
+  <product-detail
+    [productListComp]="productListComponent"
+    *ngIf="productListComponent.selectedProduct">
+  </product-detail>
 </div>
